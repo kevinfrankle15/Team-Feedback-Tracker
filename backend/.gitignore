@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Flask-specific files
+instance/  # For Flask's instance folder, often used for configuration and sensitive data
+
+# Database files
+*.sqlite3
+*.db
+
+# Log files
+*.log
+
+# Sensitive information/configuration
+.env
+.flaskenv
+config.pyc
