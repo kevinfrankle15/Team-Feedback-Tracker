@@ -29,3 +29,4 @@ instance/  # For Flask's instance folder, often used for configuration and sensi
 .env
 .flaskenv
 config.pyc
+config.py
