@@ -63,3 +63,18 @@ python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 python app.py
+
+## 🐳 Docker Setup
+
+### 📦 Prerequisites
+
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Ensure Docker Engine is running
+- Free ports `5000` (backend) and `5433` (PostgreSQL)
+
+---
+
+### 🚀 Run the App (Backend + PostgreSQL)
+
+```bash
+docker-compose up --build
