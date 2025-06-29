@@ -72,8 +72,8 @@ pip install -r requirements.txt
 python app.py
 Backend will be available at: http://localhost:5000
 ```
-🐳 Docker Setup (Backend + PostgreSQL)
-📋 Prerequisites
+###  🐳 Docker Setup (Backend + PostgreSQL)
+## 📋 Prerequisites
 
 Install Docker Desktop
 
@@ -85,20 +85,17 @@ Free ports:
 
 5433 → PostgreSQL (mapped from container's 5432)
 
-🚀 Run via Docker Compose
-bash
-Copy
-Edit
+### 🚀 Run via Docker Compose
+
 cd backend
 docker-compose up --build
 Backend API: http://localhost:5000/api
 
 PostgreSQL: localhost:5433
 
-🐳 Dockerfile (Backend)
+### 🐳 Dockerfile (Backend)
 dockerfile
-Copy
-Edit
+
 FROM python:3.11-slim
 
 WORKDIR /app
@@ -111,19 +108,18 @@ COPY . .
 EXPOSE 5000
 
 CMD ["python", "app.py"]
-🧪 Demo Credentials (Seed Data)
+### 🧪 Demo Credentials (Seed Data)
 Manager: sarah@company.com / password
 
 Employees: mike@company.com, john@company.com / password
 
-🤖 Built With AI Support
-This project was developed with the help of ChatGPT, which assisted in:
+## 🤖 Built With AI Support
 
-✅ Backend planning and modularization
+This project was developed with the help of a **lovable AI assistant – ChatGPT**, which contributed to both backend and frontend development:
 
-🛠️ Error resolution and bug fixing
-
-🐳 Docker configuration and optimization
-
-⚡ Fast-tracking API development and feature building
+- ✅ Backend planning and modularization  
+- 🛠️ Error resolution and bug fixing  
+- 🐳 Docker configuration and optimization  
+- ⚡ Fast-tracking API development and feature building  
+- 🎨 Frontend scaffolding, component logic, and UI ideas
 
