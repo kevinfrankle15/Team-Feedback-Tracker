@@ -75,12 +75,13 @@ python app.py
 
 ---
 
+### With the Help Of 
+-  Built with support from a lovable AI assistant to boost development speed, maintain code quality, and solve blockers in real-time.
+  
+-  The backend was developed with the support of **ChatGPT**, helping streamline development, resolve bugs faster, and ensure clean, modular code.
+  
 ### 🚀 Run the App (Backend + PostgreSQL)
 
 ```bash
 docker-compose up --build
 
-
--  Built with support from a lovable AI assistant to boost development speed, maintain code quality, and solve blockers in real-time.
-  
--  The backend was developed with the support of **ChatGPT**, helping streamline development, resolve bugs faster, and ensure clean, modular code.
