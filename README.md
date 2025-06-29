@@ -72,9 +72,6 @@ python app.py
 - Ensure Docker Engine is running
 - Free ports `5000` (backend) and `5433` (PostgreSQL)
 
--  Built with support from a lovable AI assistant to boost development speed, maintain code quality, and solve blockers in real-time.
-  
--  The backend was developed with the support of **ChatGPT**, helping streamline development, resolve bugs faster, and ensure clean, modular code.
 
 ---
 
@@ -82,3 +79,8 @@ python app.py
 
 ```bash
 docker-compose up --build
+
+
+-  Built with support from a lovable AI assistant to boost development speed, maintain code quality, and solve blockers in real-time.
+  
+-  The backend was developed with the support of **ChatGPT**, helping streamline development, resolve bugs faster, and ensure clean, modular code.
