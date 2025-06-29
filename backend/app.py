@@ -9,12 +9,15 @@ from datetime import datetime
 app = Flask(__name__)
 app.config.from_object(Config)
 
-CORS(app)
+# CORS(app)
+
+CORS(app, origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000", "http://127.0.0.1:3000"])
+
 db.init_app(app)
 jwt = JWTManager(app)
 @app.route('/')
 def index():
-    return "🎉 Flask server running with PostgreSQL!"
+    return " Flask server running with PostgreSQL!"
 @app.before_request
 def create_tables_once():
     if not getattr(app, '_tables_created', False):

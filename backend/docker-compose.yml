@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:15
+    image: postgres:17
     environment:
       POSTGRES_DB: feedback_db
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: kevin
     ports:
-      - "5432:5432"
+      - "5433:5432"  
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -17,7 +17,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DATABASE_URL: postgresql://user:password@db:5432/feedback_db
+      DATABASE_URL: postgresql://postgres:kevin@db:5432/feedback_db
       SECRET_KEY: your-secret-key-here
       JWT_SECRET_KEY: jwt-secret-string
     depends_on:
